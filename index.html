@@ -1,0 +1,371 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MovieHUB</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Sen:wght@400;500;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css">
+</head>
+
+<body>
+
+    <div class="navbar">
+        <div class="navbar-container">
+
+            <div class="logo-container">
+                <h1 class="logo">Movie<span>HUB</span></h1>
+            </div>
+
+            <div class="menu-container">
+                <ul class="menu-list">
+                    <li class="menu-list-item active" id="home-menu">Home</li>
+                    <li class="menu-list-item" id="movies-menu">Movies</li>
+                    <li class="menu-list-item">Series</li>
+                    <li class="menu-list-item">Popular</li>
+                    <li class="menu-list-item">Trends</li>
+                    <li class="menu-list-item" id="watch-later-menu">Watch Later</li>
+                </ul>
+            </div>
+
+            <div class="profile-container">
+                <img class="profile-picture" src="img/Prifile picture.jpg" alt="Profile picture">
+
+                <div class="profile-text-container">
+                    <span class="profile-text">Profile</span>
+                    <i class="fa-solid fa-caret-down"></i>
+                </div>
+
+                <div class="toggle">
+                    <i class="fa-solid fa-moon toggle-icon"></i>
+                    <i class="fa-solid fa-sun toggle-icon"></i>
+                    <div class="toggle-ball"></div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="sidebar-trigger"></div>
+
+    <div class="sidebar">
+
+        <i id="search-toggle"
+           class="left-menu-icon fa-solid fa-magnifying-glass"
+           title="Search"
+           role="button"
+           tabindex="0"></i>
+
+        <i id="home-toggle"
+           class="left-menu-icon fa-solid fa-house"
+           title="Home"
+           role="button"
+           tabindex="0"></i>
+
+        <i id="movies-toggle"
+           class="left-menu-icon fa-solid fa-tv"
+           title="Movies"
+           role="button"
+           tabindex="0"></i>
+
+        <i id="saved-toggle"
+           class="left-menu-icon fa-solid fa-bookmark"
+           title="Watch Later"
+           role="button"
+           tabindex="0"></i>
+
+        <i class="left-menu-icon fa-solid fa-user"
+           title="Profile"></i>
+
+    </div>
+
+    <input
+        type="search"
+        id="movie-search"
+        placeholder="What movie are you looking for?"
+        autocomplete="off"
+    >
+
+    <p id="filter-status" aria-live="polite"></p>
+
+    <div class="container">
+        <div class="content-container">
+
+            <div class="featured-Movies"
+                 style="background: linear-gradient(to bottom, rgba(0,0,0,0), #151515), url('img/walker but wider.jpg') center / cover no-repeat;">
+
+                <img class="featured-title"
+                     src="img/moonwalk copy.png"
+                     alt="Moonwalkin">
+
+                <p class="featured-desc">
+                    An astronaut discovers the only way to survive the Moon
+                    is to walk backwards, with style. Gravity never looked so smooth.
+                </p>
+
+                <button class="featured-button">WATCH</button>
+
+            </div>
+
+            <div class="movie-list-container">
+
+                <h1 class="movie-list-title">NEW RELEASES</h1>
+
+                <div class="movie-list-wrapper">
+                    <div class="movie-list">
+
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/1c3b617c-5bab-4100-a92c-5d80bdb3c26c.jpg" alt="Down">
+                            <span class="movie-list-item-title">Down</span>
+                            <p class="movie-list-item-desc">Carl's balloons popped. So did his heart. Now the only adventure left is six feet DOWN.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/676c42a9-3c00-4932-9959-edc3a2125961.jpg" alt="Diddy Did It">
+                            <span class="movie-list-item-title">Diddy Did It</span>
+                            <p class="movie-list-item-desc">When the lights go out, the lotion comes out. A mysterious creature is on the loose, and its victims are about to learn that some stains never wash away. Oil up at your own risk.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/b920295e-cc26-4384-b8a8-7b1b01a3a591.jpg" alt="Frying Nemo">
+                            <span class="movie-list-item-title">Frying Nemo</span>
+                            <p class="movie-list-item-desc">Finding Nemo? Well Nemo was never found. He was found crispy, floating in a pool of cooking oil.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/a1f9403d-4f0e-4b2a-99aa-6603e0e7cf82.jpg" alt="My Amnesia Girl">
+                            <span class="movie-list-item-title">My Amnesia Girl</span>
+                            <p class="movie-list-item-desc">She forgot everything except how to run. Her fingerprints remembered the rest.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/4397011b-f05d-4f78-8770-75466e6f651b.jpg" alt="Halloweeheen">
+                            <span class="movie-list-item-title">Halloweeheen</span>
+                            <p class="movie-list-item-desc">He doesn't scream. He doesn't run. He giggles, and you're gone.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/311d5c0d-aea8-40fc-93c9-609c8b11657f.jpg" alt="TUBIG nau BUSAN">
+                            <span class="movie-list-item-title">TUBIG nau BUSAN</span>
+                            <p class="movie-list-item-desc">Dumating ang pinakamalakas na El Niño sa loob ng 150 taon. Ang sagot nila: balde. Ang tanong ng bayan: bakit?</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/3766e85c-27ce-46dd-8165-4e06fead885f.jpg" alt="Tung Sheldon">
+                            <span class="movie-list-item-title">Tung Sheldon</span>
+                            <p class="movie-list-item-desc">Tungg Tung Sahurrr</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+
+                    </div>
+
+                    <i class="fa-solid fa-angle-right arrow"></i>
+                </div>
+            </div>
+
+            <div class="movie-list-container">
+
+                <h1 class="movie-list-title">POPULAR MOVIES</h1>
+
+                <div class="movie-list-wrapper">
+                    <div class="movie-list">
+
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/44f164fd-ba5f-46da-b7bf-72dd8c4e9bbd.jpg" alt="The Snowy Center">
+                            <span class="movie-list-item-title">The Snowy Center</span>
+                            <p class="movie-list-item-desc">Walang heater, pero may kilig.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/5609b990-7e65-4d1b-98b2-537b13ee4b8e.jpg" alt="Life Of Mia">
+                            <span class="movie-list-item-title">Life Of Mia</span>
+                            <p class="movie-list-item-desc">She's organized. She's fine. She's famous.. So you better check your man's phone history.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/073b3367-cfa5-4b49-a33e-1ff6dcc567bd.jpg" alt="KaraMia">
+                            <span class="movie-list-item-title">KaraMia</span>
+                            <p class="movie-list-item-desc">Kung papapiliin ka, sino sa dalawa?</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/f6638205-a4f8-414f-8552-09a79b0d6b18.jpg" alt="Black Chicks">
+                            <span class="movie-list-item-title">Black Chicks</span>
+                            <p class="movie-list-item-desc">White Chicks But Better.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/b97404c0-de00-41a9-9872-6d537d2567ae.jpg" alt="Elmo Starts WWIII">
+                            <span class="movie-list-item-title">Elmo Starts WWIII</span>
+                            <p class="movie-list-item-desc">A furious furry decides to start a war.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/b21a4985-62b1-4b23-b5d2-ef45db823938.jpg" alt="The Grudashians">
+                            <span class="movie-list-item-title">The Grudashians</span>
+                            <p class="movie-list-item-desc">A real life sneak peak on how the Grudashians became The Grudashians.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/b9f86446-f68a-4344-8995-6cba997d5d32.jpg" alt="Five Night's At Diddy's 2">
+                            <span class="movie-list-item-title">Five Night's At Diddy's 2</span>
+                            <p class="movie-list-item-desc">Five nights. Zero survivors. Unlimited baby oil. Can you Survive the Diddy House?</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+
+                    </div>
+
+                    <i class="fa-solid fa-angle-right arrow"></i>
+                </div>
+            </div>
+
+            <div class="featured-Movies"
+                 style="background: linear-gradient(to bottom, rgba(0,0,0,0), #151515), url('img/road.jpg') center / cover no-repeat;">
+
+                <img class="featured-title"
+                     src="img/The road title.png"
+                     alt="The Road">
+
+                <p class="featured-desc">Just a road.</p>
+
+                <button class="featured-button">WATCH</button>
+
+            </div>
+
+            <div class="movie-list-container">
+
+                <h1 class="movie-list-title">TRENDING NOW</h1>
+
+                <div class="movie-list-wrapper">
+                    <div class="movie-list">
+
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/5cfe2538-6bed-4adc-bd52-a06fef6ddf82.jpg" alt="The Beaning">
+                            <span class="movie-list-item-title">The Beaning</span>
+                            <p class="movie-list-item-desc">You can run, but you can't hide. You took his teddy, now you pay.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/64bf5b9a-a4f5-4ea8-986e-47eb23de49ff.jpg" alt="Chucky VS Megan">
+                            <span class="movie-list-item-title">Chucky VS Megan</span>
+                            <p class="movie-list-item-desc">Epic battle over an Ipad.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/b338a1bc-0a80-4444-b62c-b0b5e4a98aa4.jpg" alt="The Onion Rings">
+                            <span class="movie-list-item-title">The Onion Rings</span>
+                            <p class="movie-list-item-desc">A constant battle to find the perfect barbeque sauce.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/22b7735f-1fb3-447e-860c-9f411b9a3ce5.jpg" alt="C-NDERELLA">
+                            <span class="movie-list-item-title">C-NDERELLA</span>
+                            <p class="movie-list-item-desc">A love between a chud and a sigma.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/a531c7f6fb6b947c256c5d7ab804efc6.jpg" alt="Jawth">
+                            <span class="movie-list-item-title">Jawth</span>
+                            <p class="movie-list-item-desc">A thwong thwerry thawrk appearth that killth and eath people.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/eaeae5887ae661eea5e8540d488980ba.jpg" alt="Italien">
+                            <span class="movie-list-item-title">Italien</span>
+                            <p class="movie-list-item-desc">A spaceship that is filled with Italians comes to ruin the world.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/6ad304a107cc3a4091d2603722080fca.jpg" alt="Baking Bread">
+                            <span class="movie-list-item-title">Baking Bread</span>
+                            <p class="movie-list-item-desc">A normal guy bakes bread. Bread.</p>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+
+                    </div>
+
+                    <i class="fa-solid fa-angle-right arrow"></i>
+                </div>
+            </div>
+
+            <div class="movie-list-container" id="watch-later-section">
+
+                <h1 class="movie-list-title">WATCH LATER</h1>
+
+                <p id="watch-later-empty">
+                    You haven't added any movies yet. Click a heart on a movie to add it here!
+                </p>
+
+                <div class="movie-list-wrapper">
+                    <div class="movie-list" id="watch-later-list"></div>
+                    <i class="fa-solid fa-angle-right arrow"></i>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    
+    <div id="rickroll-overlay" class="rickroll-overlay" aria-hidden="true">
+
+        <button id="close-rickroll"
+                class="close-rickroll"
+                type="button"
+                aria-label="Close video">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+
+        <div class="rickroll-content">
+
+            <span class="rickroll-mark" aria-hidden="true">You just got Rickrolled!</span>
+
+            <div class="rickroll-video-container">
+                <video
+                    id="rickroll-video"
+                    controls
+                    playsinline
+                    preload="none">
+                    <source src="rickroll.mp4" type="video/mp4">
+                    
+                </video>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="app.js"></script>
+
+</body>
+</html>
+
+
+
+
+
+
